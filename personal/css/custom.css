@@ -1,0 +1,124 @@
+/* about.html page */
+@font-face {
+  font-family: weddingFont;
+  src: url(../fonts/FrederickatheGreat-Regular.ttf); 
+}
+@font-face{
+	font-family: textFont;
+  src: url(../fonts/CrimsonText-Regular.ttf);
+}
+
+img{
+  border-radius: 20px;
+}
+
+body{
+	background-color: #F0ECCD;
+}
+
+h1{
+	font-family: weddingFont;
+	text-align: center;
+	font-size: 35px;
+}
+
+nav ul{
+	border: solid 0px black;
+	list-style: none; /* remove list dots */
+	margin: 0px;
+	display: flex; /* turn vertical orientation to horizontal */
+}
+
+
+nav ul a{
+	text-decoration: none;
+	flex-grow: 1;
+	margin-left: 70px;
+	text-align: center; /* center the text button */
+  /*  padding: 0px; /* add padding around button */
+    color: #934C12;
+    text-shadow: 2px 2px 5px yellow;
+    font-size: 15pt;
+}
+
+nav ul a:hover{
+	border: solid 0px black;
+}
+
+nav ul a li{
+border: solid 0px black;
+text-align: center;
+margin:0px;
+}
+
+
+/* worked */
+a:visited{
+	color: purple;
+}
+
+/* worked */
+a:active{
+  color: orangered;
+}
+
+/* worked */
+a:focus{
+  color:red;
+}
+
+a:hover{
+	border: solid 0px black;
+	background: #FFE877;
+	/*color: black; */
+}
+
+table{
+	border: solid 0px black;
+	text-align: center;
+	border-collapse: collapse;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding:25px;
+}
+
+
+
+p{
+	text-indent: 25px;
+	text-align: left;
+	margin:30px;
+	/*font-family: textFont; */
+}
+
+
+li{
+	text-align: left;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+
+table { 
+	  font-family: textFont;
+    table-layout:fixed;
+    background-clip: content-box; /* <---- */
+   /* box-shadow: inset 0 0 0 35px lightGreen; */
+}
+
+tr:hover {background-color: #F9F4BF 
+;
+	/* #F9F4BF */}
+
+img{
+  /* display: inline-block;
+	 justify-content: center; */
+	 margin: 0auto;
+
+}
+
+td { 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+} 

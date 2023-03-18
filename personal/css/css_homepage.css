@@ -1,0 +1,146 @@
+
+/* Index.html page  */
+
+@font-face {
+  font-family: weddingFont;
+  src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+
+body{
+   background-image: url(https://c0.wallpaperflare.com/preview/218/233/171/piano-oldschool-vintage-music.jpg); 
+    background-repeat: no-repeat;
+    /*	https://c4.wallpaperflare.com/wallpaper/783/859/793/baby-cat-cute-guitar-wallpaper-preview.jpg);*/
+    /*background-color: green; */
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+#wrap{
+	border: solid 0 px black;
+	/*width: 1024px;  this will fix the width of a box*/
+	margin: 0 auto; /*center the box*/
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+#wrap section{
+	border: solid 0px black;
+	display:flex;
+	flex-direction: column;
+}
+
+
+h1{
+	font-size: 27pt;
+	padding: 50 px;
+	text-align: center;
+	color: #F0ECCD;
+	font-family: weddingFont; 
+}
+
+h4{
+	text-align: center; 
+	color: #F0ECCD;
+	margin: 21px; 
+	font-size: 14pt;
+	text-shadow: 2px 2px 5px #934C12;
+}
+
+img{
+	margin-left: 25px;
+    opacity: 0.9;
+    margin-top: 0px;
+}
+
+audio{
+	margin: 0 auto;
+	width: 200 px;
+}
+
+header{
+
+	height: 150px;
+	/*background-color: yellow; */
+	padding: 40px; /* move text inside */
+	font-size: 40pt;
+	color: #F0ECCD;
+	text-indent: 25px;
+	/*margin-left: 500px; */
+}
+
+nav ul{
+	border: solid 0px black;
+	list-style: none; /* remove list dots */
+	/*margin: 0px; */
+	margin-top: 0px;
+	padding: 0px;
+	display: flex; /* turn vertical orientation to horizontal */
+}
+
+nav ul a{
+	flex-grow: 1;
+	text-align: center; /* center the text button */
+    padding: 10px; /* add padding around button */
+    color: yellow;
+}
+
+nav ul a li{
+	border: solid 0px black;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 15pt;
+	color: #934C12;
+	text-shadow: 2px 2px 5px yellow;
+  background: #F0ECCD;
+}
+
+
+/* Note: there shouldn't be any space between : and hover */
+nav ul a li:hover{
+	border: solid 0px black;
+	background: #E1D8B7 ;
+	color: #A0200C ;
+
+}
+
+
+p{
+	color: #F0ECCD;
+	margin: 20px;
+	text-indent: 25px;
+	font-size: 14pt;
+	text-shadow: 2px 2px 5px #050502 ;
+}
+
+
+#map{
+	margin-left: 20px;
+	padding: 10px;
+}
+
+footer{
+  display: flex;
+}
+
+
+a{
+	font-size: 12pt;
+	margin: 0 auto;
+	color: #EEEDE9;
+	text-align:center;
+	display: block; /* If center the link, you must add display block! */
+    text-shadow: 2px 2px 5px #050502 ;
+}
+
+.right{
+   
+ text-shadow: 2px 2px 5px #050502;
+}
+
+

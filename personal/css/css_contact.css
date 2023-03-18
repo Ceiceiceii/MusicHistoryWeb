@@ -1,0 +1,101 @@
+/*contact.html page*/
+
+@font-face {
+  font-family: weddingFont;
+  src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+body{
+text-align: center;
+
+}
+
+#pic{
+	margin-left: 270px;
+	box-shadow: inset 0 0 0 0px lightgreen; 
+	padding: 0px;
+}
+
+#pic a{
+	margin: 20px;
+	margin-top: 0px;
+}
+
+#pic img{
+
+  border-radius: 30px;
+
+}
+
+table{
+	width: 65%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 10px;
+	 background-clip: content-box; /* <---- */
+   box-shadow: inset 0 0 0 13px lightgreen; 
+}
+
+/*nav ul来flex, 不是nav ul a li*/
+nav ul{
+	border: solid 0 px black;
+	display: flex;
+	text-align: center;
+    list-style: none;
+}
+
+nav ul a{
+	flex-grow: 1;
+	text-align: center; /* center the text button */
+    padding: 10px; /* add padding around button */
+    color: #934C12;
+}
+
+/* Unvisited link */
+a:link{
+	text-decoration: none;
+	color: #934C12;
+	border: solid 0px black;
+	font-size: 20px;
+    text-shadow: 2px 2px 5px yellow;
+}
+
+/* worked */
+a:visited{
+	color: purple;
+	text-shadow: 2px 2px 5px purple
+}
+
+/* worked */
+a:active{
+  color: orangered;
+}
+
+
+/* ? */
+a:focus{
+  color:red;
+}
+
+.link:hover{
+	border: solid 0px black;
+	background: #FFE877;
+	/*color: black; */
+}
+
+
+p{
+	color:#934C12;
+}
+
+header{
+	font-size: 18px;
+}
+
+textarea, input{
+	border-radius: 10px;
+	margin: 5px;
+	padding: 15px;
+}
+
