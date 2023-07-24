@@ -4,6 +4,7 @@
 
 ### Introduction of this website
 * This website aims to help students in New York University general education classes to study classical music history based on timeline and musical movements.
+* The 'personal' folder contains all html pages, audio, fonts used when creating this website.
 
 Relevant Skills:
 HTML, CSS, Bootstrap, JavaScript
