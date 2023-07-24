@@ -18,7 +18,7 @@ HTML, CSS, Bootstrap, JavaScript
 ### The timeline:
 <img width="1262" alt="Screen Shot 2023-07-24 at 2 55 10 PM" src="https://github.com/lesleyzhao/Music_History_Website/assets/100020447/628d67b4-5525-40f0-a069-d2c839f11fdd">
 
-### The composer subpage
+### The composer subpage:
 <img width="1260" alt="Screen Shot 2023-07-24 at 3 02 17 PM" src="https://github.com/lesleyzhao/Music_History_Website/assets/100020447/c0383a14-9b59-46fe-a2f2-798f15fc172d">
 
 
