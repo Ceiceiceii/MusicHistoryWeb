@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Contact Me </title>
+    <link rel = "StyleSheet" href="css/css_contact.css"/>
+
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2w4_dQMMLZaeaDIYa12Ue5FHrNtH-6ckKw&usqp=CAU" sizes="32x32">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+
+  <body>
+      <div class="container-fluid">
+      <!--Bootstrap Header -->
+      <header class="row">
+        <div class="col-md-12 noPadding" id="head">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" >
+              <a class="navbar-brand" href="#" id="bigtitle" style="color:purple;text-shadow:none;"><b>Music History </b>&#127926;</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" id="sub">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="sub">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="about.html#timeline">History Overview</a></li>
+                      <li><a class="dropdown-item" href="about.html#composers">Composer Overview</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html" id="sub">Contact Me</a>
+                  </li>
+                </ul>
+                <!--
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                
+                </form> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+     
+
+
+    <h1 style="font-family: weddingFont; padding-top:110px;margin-left: 33px;"> Stay in Touch With Me &#128521  </h1>
+
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <p style="margin-left: 25px; text-indent: 20px; font-size: 20px;">
+          Nice to meet you! My name is Lesley Zhao, a current junior student majoring in Data Science and Computer Science at New York University. I am also an enthusiast of Classical Music and Piano Performance. &#127929;&#127931;&#127925;
+        </p>
+        <p style="margin-left: 25px;text-indent: 20px;font-size:20px">
+          If you want to contact me for the reason of updating contents on this page, or want to know more about classical music, please send me an email via this address:<strong>  tz2074@nyu.edu</strong>. I will reply within 3 business days.
+        </p>
+      </div>
+      <div class="col-md-5">
+         <td><img src = "images/self.jpg"/ width="100%" height="auto" > 
+      </div>
+      <div class="col-md-1" id="socialMedia">
+          <a href="https://www.linkedin.com/in/lesley-zhao-136662215/">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="50" height="50">
+          </a> 
+          <br>
+          <br>
+          <a href = "https://www.instagram.com/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" width="50" height="50">
+      
+      </div>
+    </div>
+   </div>
+
+    
+  
+
+    
+
+
+    <!--
+    <form>
+    <table border="1" width="1000px" height = "400px">
+      <tr>
+        <td colspan="2"> Please fill in the form to send me a message: </td>
+      </tr>
+      <tr>
+        <td> Name:</td>
+        <td> <input type = "text" name = "username" placeholder="Enter your username" />   </td>
+      </tr>  
+      <tr>
+        <td> Email: </td>
+        <td> <input type = "text" name = "Email" placeholder="Enter your Email" /> </td>
+      </tr> 
+      <tr>
+        <td> Check days to meet: </td>
+        <td> 
+          <input type="checkbox" name="classday" value="M" /> - Monday
+          <input type="checkbox" name="classday" value="T" /> - Tuesday
+          <input type="checkbox" name="classday" value="W" /> - Wednesday
+          <input type="checkbox" name="classday" value="Th" /> - Thursday
+          <input type="checkbox" name="classday" value="F" /> - Friday
+          <input type="checkbox" name="classday" value="NA" /> - No need to meet
+
+        </td>
+      </tr> 
+      <tr>
+        <td> Class time: </td>
+        <td> 
+          <input type = "radio" name="timeclass" value="AM" /> - AM
+          <input type = "radio" name="timeclass" value="PM" /> - PM
+        </td>
+      </tr> 
+      <tr>
+        <td> Topic: </td>
+        <td> 
+          <select name = "topic">
+            <option value="null"> -- Please select one -- </option>
+            <option value="Correction"> -- Correction -- </option>
+            <option value="Info"> -- More Info About Music -- </option>
+            <option value="Collaboration"> -- Join Us -- </option>
+          </select>
+        </td>
+      </tr> 
+      <tr>
+        <td> Message: </td>
+        <td> 
+          <textarea name = "message" cols = "50" rows = "30"> 
+          </textarea>
+        </td>
+      </tr> 
+      <tr>
+        <td colspan = "2">
+          <input type="reset" value="CLEAR FORM" />
+          <input type="submit" value="SEND MESSAGE" />
+        </td>
+      </tr>
+    </table>
+  </form>  -->
+  
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+ 
+</html>

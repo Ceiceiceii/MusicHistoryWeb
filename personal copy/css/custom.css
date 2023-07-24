@@ -1,0 +1,335 @@
+/* about.html page */
+@font-face {
+  font-family: weddingFont;
+  src: url(../fonts/FrederickatheGreat-Regular.ttf); 
+}
+@font-face{
+	font-family: textFont;
+  src: url(../fonts/CrimsonText-Regular.ttf);
+}
+
+img{
+  border-radius: 20px;
+}
+
+body{
+	background-color: #FCF6F6 !important;
+}
+
+h1{
+	font-family: weddingFont;
+	text-align: center;
+	font-size: 35px;
+}
+
+nav ul{
+	border: solid 0px black;
+	list-style: none; /* remove list dots */
+	margin: 0px;
+	display: flex; /* turn vertical orientation to horizontal */
+}
+
+
+
+nav ul a{
+	text-decoration: none;
+	flex-grow: 1;
+	margin-left: 70px;
+	text-align: center; /* center the text button */
+  /*  padding: 0px; /* add padding around button */
+    color: #934C12;
+    text-shadow: 2px 2px 5px yellow;
+    font-size: 15pt;
+}
+
+nav ul a:hover{
+	border: solid 0px black;
+}
+
+nav ul a li{
+border: solid 0px black;
+text-align: center;
+margin:0px;
+}
+
+
+/* worked */
+a:visited{
+	color: purple;
+}
+
+/* worked */
+a:active{
+  color: orangered;
+}
+
+/* worked */
+a:focus{
+  color:red;
+}
+
+a:hover{
+	border: solid 0px black;
+	background: #FFE877;
+	/*color: black; */
+}
+
+table{
+	border: solid 0px black;
+	text-align: center;
+	border-collapse: collapse;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding:25px;
+}
+
+
+
+p{
+	text-indent: 25px;
+	text-align: left;
+	margin:30px;
+	/*font-family: textFont; */
+}
+
+
+li{
+	text-align: left;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+
+table { 
+	  font-family: textFont;
+    table-layout:fixed;
+    background-clip: content-box; /* <---- */
+   /* box-shadow: inset 0 0 0 35px lightGreen; */
+}
+
+tr:hover {background-color: #F9F4BF 
+;
+	/* #F9F4BF */}
+
+img{
+  /* display: inline-block;
+	 justify-content: center; */
+	 margin: 0auto;
+	 padding: 0px;
+
+}
+
+td { 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+} 
+
+
+
+
+/*Below is for boostrap*/
+
+#flexContainer{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#video{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex:1;
+}
+
+.col-md-4,.col-md-8,.col-md-12{
+	border:solid 0px black;
+	max-width: 100%;
+	padding:0px;
+	margin:0px;
+}
+
+/*Make audio responsive*/
+audio{
+           max-height: 100%;
+           max-width: 100%;
+           margin: auto;
+           object-fit: contain;
+         }
+
+.noPadding{
+	padding: 0px !important;
+}
+
+.col-md-4 {
+  width: 33.33%;
+}
+
+.col-md-8 {
+  width: 66.67%;
+}
+
+#head{
+	background: F9AEAE;
+	z-index: 1000;
+	position: fixed;
+}
+
+#bigtitle{
+	margin-left:34px;
+	font-size: 40px;
+}
+
+#sub{
+	color:black;
+	font-size:20px;
+}
+
+
+
+
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+	width:320px;
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070F4;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+
+
