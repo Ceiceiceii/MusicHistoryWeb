@@ -3,7 +3,7 @@
 
 
 ### Introduction of this website
-* this website aims to help students in New York University general education classes to study classical music history based on timeline and musical movements.
+* This website aims to help students in New York University general education classes to study classical music history based on timeline and musical movements.
 
 Relevant Skills:
 HTML, CSS, Bootstrap, JavaScript
