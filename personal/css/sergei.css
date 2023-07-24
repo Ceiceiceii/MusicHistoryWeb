@@ -1,0 +1,138 @@
+/* Below is for individual musician pages */
+#p1{
+	/*color: #F0ECCD; */
+	margin: 30px;
+	margin-top:0px;
+	text-indent: 25px;
+	font-size: 18pt;
+	text-align: justify;
+	/*text-shadow: 2px 2px 5px #050502 ; */
+}
+
+body{
+	background-color: #FCF6F6 !important;
+}
+
+nav ul a{
+	text-decoration: none;
+	flex-grow: 1;
+	margin-left: 98px;
+	text-align: center; /* center the text button */
+  /*  padding: 0px; /* add padding around button */
+    color: #934C12;
+    text-shadow: 2px 2px 5px yellow;
+    font-size: 15pt;
+}
+
+#Beethoven{
+	margin: 30px;
+	padding: 15px;
+  float: left;
+}
+
+
+
+#parent{
+  display: flex;
+ /* margin-left: 25px; */
+  border: 0px solid black;
+}
+
+iframe{
+	/*flex-direction: row;*/
+	border: 0px solid blue;
+	align-items: center;
+	/*margin-left: 140px;
+	display: block; */
+	border-radius:40px
+}
+
+#audio ul{
+	display: block;
+	border: 0px solid blue;
+}
+
+/*
+#video{
+	display: block;
+} */
+
+
+#audio ul li{
+	line-height: 0em;
+		margin: 0 px;
+		padding:0 px;
+}
+
+mark{
+	width:50%;
+}
+
+
+#head{
+	background: F9AEAE;
+	z-index: 1000;
+	position: fixed;
+}
+
+
+#bigtitle{
+	margin-left:34px;
+	font-size: 40px;
+}
+
+#sub{
+	color:black;
+	font-size:20px;
+}
+
+
+.noPadding{
+	padding: 0px !important;
+}
+
+
+/* worked */
+a:visited{
+	color: purple;
+}
+
+/* worked */
+a:active{
+  color: orangered;
+}
+
+/* worked */
+a:focus{
+  color:red;
+}
+
+a:hover{
+	border: solid 0px black;
+	background: #FFE877;
+	/*color: black; */
+}
+
+.col-md-4,.col-md-8,.col-md-12,.col-md-10,.col-md-2{
+	border:solid 0px black;
+	max-width: 100%;
+	padding:0px;
+	margin:0px;
+}
+
+
+audio{
+           max-height: 100%;
+           max-width: 100%;
+           margin: auto;
+           object-fit: contain;
+         }
+
+#works nav ul li{
+	font-size: 15px;
+}
+
+
+.col-md-10 nav ul li{
+	font-size: 19px;
+}

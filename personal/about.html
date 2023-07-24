@@ -3,334 +3,652 @@
   <head>
     <title> Introduction to Music History </title>
     <link rel = "StyleSheet" href="css/custom.css"/>
+    <!-- Swiper CSS -->
+    <!--<link rel="stylesheet" href="css/swiper-bundle.min.css">-->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Icon -->
     <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2w4_dQMMLZaeaDIYa12Ue5FHrNtH-6ckKw&usqp=CAU" sizes="32x32">
+    <!-- link to Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
 
-  <body>
-    <h1 style="font-family: weddingFont;"> Overview of Music History and Composers </h1>
-    <div id="wrap"> 
+ <body>
 
-        <header style="font-size: 20px">
+
+  <div class="container-fluid">
+      <!--Bootstrap Header -->
+      <header class="row">
+        <div class="col-md-12 noPadding" id="head">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" >
+              <a class="navbar-brand" href="#" id="bigtitle"><b>Music History </b>&#127926;</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" id="sub">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="sub">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="about.html#timeline">History Overview</a></li>
+                      <li><a class="dropdown-item" href="about.html#composers">Composer Overview</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html" id="sub">Contact Me</a>
+                  </li>
+                </ul>
+                <!--
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                
+                </form> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <br> <br>
+      
+      <h2 style="margin-left: 35px;padding-top: 58px;" id="composers"><b>Key Composers</b></h2> 
+     <!-- JS swiper -->
+     <div class="slide-container swiper" style="padding-top:15px">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Johann_Sebastian_Bach.jpg?20200513060038" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Johann Sebastian Bach</h2>
+                            <p class="description">Bach is one of the most crucial Baroque composers in music history. His mathematically crafted music still captivates listeners today.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/640px-Beethoven.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Ludwig van Beethoven</h2>
+                            <p class="description">Beethoven's music transcended the Classical period, showcasing a unique, emotional Romantic style, developed over three periods: his early, middle, and late years. </p>
+
+                            <button class="button">
+                              <a href="beethoven.html" target="_blank" style="text-decoration: none;color:white"> 
+                            View More
+                          </a>
+                           </button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://cdn.britannica.com/35/74835-050-F0B71060/canvas-oil-Wolfgang-Amadeus-Mozart-Barbara-Krafft-1819.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Wolfgang Amadeus Mozart</h2>
+                            <p class="description"> Mozart was a highly prolific and influential composer of the Classical period.  He showed prodigious musical ability from his earliest childhood and excelled on the keyboard and violin.</p>
+
+                            <button class="button">
+                              <a href="mozart.html" target="_blank" style="text-decoration: none;color:white">
+                              View More </a>
+                          </button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Chopin%2C_by_Wodzinska.JPG" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Frederic Chopin</h2>
+                            <p class="description">Chopin's music, characterized by its virtuosic piano techniques, is regarded as masterpiece of Romanticism. More passion, more emotions, and more lyrical melodies.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Claude_Debussy_atelier_Nadar.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Claude Debussy</h2>
+                            <p class="description">Debussy's music, with its dreamy and atmospheric qualities, captured the essence of Impressionism. He intended to delineate the "impression" of a scene, instead of following traditional music rules.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcQRGcH3JFoJYW_wAvNKZyoZgWx5hNiaMTHeY7BhxXNM4eyCekiUgpktzTT2DW30_zxNbRRK3bf-q57h6zs&psig=AOvVaw1JRu2d5Im6crsRkQnDS9ua&ust=1676368751644000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLDS-7Cekv0CFQAAAAAdAAAAABAE" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Sergei Rachmaninoff</h2>
+                            <p class="description">Rachmaninoff's lush harmonies, sweeping melodies, and virtuosic piano concertos solidified his position as a late Romantic master. Keywords: emotional depth and Russian styles  </p>
+
+                            <button class="button"><a href="sergei.html" target="_blank" style="text-decoration: none; color:white">View More</a></button>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+
+
      
-        </header>            
-    </div>
+     <!-- Accordions -->
+      <div class="col-md-12 noPadding">
+        <h2 style="margin-left: 35px; padding-top:25px"id="timeline"><b>Timeline &#8987;</b></h2> 
+          <div class="accordion" id="accordionExample" >
 
-    &nbsp;
-        <nav>
-          <ul>
-            <a href="index.html" tabindex="1">
-              <li> &#9834; Home </li>
-            </a>
-            <a href="about.html" tabindex="2">
-              <li> &#9834; Introduction to Music History </li>
-            </a>
-            <a href="contact.html" tabindex="3">
-              <li> &#9834; Contact Me </li>
-            </a>
-          </ul>
-        </nav>
+              <!-- Accordion item 1-->
+              <div class="accordion-item" style="background-color: lightgrey; margin-top:20px">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:brown; background-color:#F1E9DF ;">
+                   <div class="row">
+                     <div class="col-md-8 noPadding">
+                      <h4 style="margin-left:15px">&nbsp;&nbsp;Medieval Period &nbsp; &nbsp; &nbsp;   (5th to 15th century)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                     </div>
+                    <div class="col-md-4 noPadding">
+                     <img src = "https://images.squarespace-cdn.com/content/v1/5e9690a24018b11fd15da968/cbc68f16-cc7c-4f9f-bc92-92f47f6efb15/Missa+Papae+colour.jpg" width="80%" height="100%"/>
+                    </div>
+                   </div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-md-3 noPadding">
+                             <h4 style="margin-left:10px">Composers & Musicians</h4>
+                             <li>Hildegard von Bingen <br> <img src="http://stmaryrockledge.org/wp-content/uploads/2020/07/splendor-7.12-e1594609472371.png"/ width="80%" height="auto"></li>
+                              <li>Pope Gregory I <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gregory_the_Great_with_the_Holy_Spirit.jpg/1280px-Gregory_the_Great_with_the_Holy_Spirit.jpg"/width="80%" height="auto"></li>
+                        </div>  
+                        <div class="col-md-7 noPadding">
+                          <p style = "margin:10px">Medieval music encompasses the sacred and secular music of Western Europe during the Middle Ages. The pioneer of Medieval Music is <mark>Hildegard von Bingen </mark>, a German Benedictine abbess and polymath active as a writer, composer, philosopher, mystic, visionary. Medieval music includes <mark>liturgical music used for the church</mark>, and secular music, non-religious music; solely vocal music, such as <mark>Gregorian chant and choral music (music for a group of singers)</mark>, solely instrumental music, and music that uses both voices and instruments (typically with the instruments accompanying the voices). </p>
+
+                          <h4 style="margin-left:10px">Featured Music</h4>
+                          <div id="flexContainer">
+                            <p style="margin-left:5px;"> Gregorian Chant</p>
+                            <audio controls>
+                              <source src ="audio/Ad cenam Agni.mp4">
+                            </audio>
+                          </div>
+                          <br>
+                          <h4 style="margin-left:10px;margin-bottom: 10px;">Medieval Instruments</h4> <br>
+                          <img src=" https://azearlymusic.org/wp-content/uploads/2021/06/Medieval_instruments.png"/ width="70%" height="35%">
+                        </div>  
+                        <div class="col-md-2 noPadding">
+                           <h4 style="margin-left:10px">Music Videos</h4>
+                           <div id="video">
+                            <a href="https://youtu.be/0YTOiJ-zjP0" target="_blank">
+                            Hildegard von Bingen - Hymns in 12th century
+                            </a> <br><br>
+                            <a href="https://youtu.be/kK5AohCMX0U" target="_blank">
+                              Pope Gregory the Great - Gregorian chant
+                            </a><br><br>
+
+                            <a href="https://youtu.be/2HXT4hLeatM" target="_blank">
+                            Mirie it is while sumer ilast (England 13th century)
+                            </a>
+                          </div>
+                        </div>  
+                    </div> <!--row-->
+                  </div> <!--accordion-body-->
+                </div> <!--collapseOne-->
+              </div> <!--accordion-item-->
+
+              <!--accordion item 2-->
+              <div class="accordion-item" style="background-color: lightgrey;">
+                <h2 class="accordion-header" id="headingTwo" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:brown;background-color:#F1E9DF ">
+                    <div class="row">
+                         <div class="col-md-8">
+                          <h4 style="margin-left:15px">Renaissance Period &nbsp; &nbsp; (15th to 17th century)</h4>
+                         </div>
+                        <div class="col-md-4">
+                         <img src = "https://blog.artsper.com/wp-content/uploads/2022/04/New-Featured-Image-1200-x-675-6.jpg"width="80%" height="auto"/>
+                       </div>
+                     </div>
+                  </button>
+                </h2>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body" id = "content2">
+                     <div class="row">
+                        <div class="col-md-3 noPadding">
+                             <h4 style="margin-left:10px">Composers & Musicians</h4>
+                             <li> Josquin des Prez <br> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZgLEYbl5DzXDBW-KkLG6S4Vkg3kqWZiXJCOeQWcxIOFle495"/ width="80%" height="auto"></li>
+                              <!--<li>  Giovanni Gabrieli<br> <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcSoMAkrPntjnQLqd2PSbmXMWLC1g1WHBuMZ7FTDFohovFpG7mnkFOMF7tpKE0GbD_x7&psig=AOvVaw2udAGgshMQviqYMVEWNN1L&ust=1676360605127000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCICLtoSAkv0CFQAAAAAdAAAAABAI"/width="80%" height="auto"></li>-->
+                              <li> William Byrd <br> <img src="https://d3d00swyhr67nd.cloudfront.net/w944h944/collection/ESX/ECCC/ESX_ECCC_216-001.jpg" /width="80%" height="auto"></li>
+                        </div>  
+                        <div class="col-md-7 noPadding">
+                          <p style = "margin:10px">Much of the rhythmic complexities of late medieval music lost favour amongst the new emerging Renaissance composers. Polyphony and counterpoint featured in both sacred and secular Renaissance music but the lines were sleeker and cadence points an increasingly important focus. This was gradually moving the <mark>harmonic attention towards the tonal system of keys we know today.</mark> For a great proportion of the Renaissance, modal music was commonplace and gives the era a unique sound quality now perhaps more associated with contemporary folk music. The music often contains intervals like the open fifth (ie: C - G), or fourths (C - F) but as the period progresses the third and sixth notes of the scale become accepted as musically appropriate to use. <mark>An even more clear line </mark>is drawn in the Renaissance <mark>between music for the Church (sacred) and music used at Court for example (secular). </mark> </p>  
+
+
+                          <h4 style="margin-left:10px">Featured Music</h4>
+                          <div id="flexContainer">
+                            <p style="margin-left:5px;">  William Byrd - Pavane by Lute</p>
+                            <audio controls>
+                              <source src ="audio/pavbyrd.mp3">
+                            </audio>
+                          </div>
+                          <br>
+                          <h4 style="margin-left:10px;margin-bottom: 10px;">Renaissance Instruments</h4> <br>
+                          <img src="https://npr.brightspotcdn.com/dims4/default/e87d716/2147483647/strip/true/crop/736x414+0+113/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc1%2F31%2Fbb50776a45f7bc1c24d8446bafa7%2Fmedieval-instruments.jpg"/ width="70%" height="35%"">
+                        </div>  
+                        <div class="col-md-2 noPadding">
+                           <h4 style="margin-left:10px">Music Videos</h4>
+                           <div id="video">
+                            <a href="https://youtu.be/MNm9tNZePew" target="_blank">
+                            Josquin des Prez - Qui habitat
+                            </a> <br><br>
+                            <a href="https://youtu.be/4Ijm8mrwHGo" target="_blank">
+                              Giovanni Gabrieli - Renaissance music for two harpsichords
+                            </a>
+                            <br><br>
+                            <a href="https://youtu.be/ePqqoag8s1E" target="_blank">
+                             William Byrd - Mass for five voices
+                            </a>
+                          </div>
+                        </div>  
+                    </div>  <!--row-->
+                  </div> <!--accordion-body-->
+                </div> <!--collapseTwo -->
+              </div> <!--accordion-item-->
+
+              <!--accordion item 3-->
+              <div class="accordion-item" style="background-color: lightgrey;">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:brown;background-color:#F1E9DF">
+                     <div class="row">
+                         <div class="col-md-8">
+                          <h4 style="margin-left:15px">Baroque Period &nbsp; &nbsp; &nbsp; &nbsp; (1600-1760 A.D.)</h4>
+                         </div>
+                        <div class="col-md-4">
+                         <img src = "https://www.liveabout.com/thmb/MBOstU9tb8lHeQtAblTnWGk22qY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vocal-and-instrumental-concert-in-the-baroque-period-1771-gouache-germany-18th-century-162279496-58448b5f5f9b5851e576b959.jpg"width="80%" height="auto"/>
+                       </div>
+                     </div>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="row">
+                        <div class="col-md-3 noPadding">
+                             <h4 style="margin-left:10px">Composers & Musicians</h4>
+                             <li> Johann Sebastian Bach <br> <img src="https://d3fr1q02b1tb0i.cloudfront.net/wp-content/uploads/2017/11/06075602/Bach-bye-bye.jpg"/ width="80%" height="auto"></li>
+                              <li>  Antonio Vivaldi <br> <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Vivaldi.jpg"/width="80%" height="auto"></li>
+                              <li> George Frederic Handel <br> <img src="https://cdn.britannica.com/06/167806-050-C6A92A03/George-Frideric-Handel-oil-canvas-Thomas-Hudson-1736.jpg" /width="80%" height="auto"></li>
+                        </div>  
+                        <div class="col-md-7 noPadding">
+                          <p style = "margin:10px">The Baroque saw the creation of <mark>common-practice tonality </mark>, an approach to writing music in which a song or piece is written in a particular key; this type of harmony has continued to be used extensively in Western classical and popular music. Baroque music is primarily characterized by its <mark>polyphonic texture </mark>, meaning that the music contains 2 or more independent melodic voices. In particular, Baroque music is known for its use of the <mark>counterpoint.</mark> The counterpoint is a pretty complex musical idea, but in simpler terms, counterpoint uses different, independent musical lines that sound harmonious when played together. <br><br>
+                          <strong>Characteristics of Classical music include: </strong>
+                          <li>Polyphonic texture: multiple melodic lines in different voices</li>
+                          <li>Unity of mood: each piece features a single emotion (i.e. a piece that begins happy will remain happy)</li>
+                          <li>Continuity of rhythm: rhythmic patterns are often repeated throughout a piece</li>
+                          <li><mark>Repetition of melody:</mark> the melody is repeated; though it is distinct, it is not lyrical</li>
+                          <li>Terraced dynamics: dynamics change suddenly rather than gradually
+                          Ornamentation (music flourishes, often fast notes, to decorate the main note)</li>
+                          <li>Less use of instrumental music; large use of the <mark>harpsichord</mark> </li></p>  
+
+
+                          <h4 style="margin-left:10px">Featured Music</h4>
+                          <div id="flexContainer">
+                            <p style="margin-left:5px;">Bach's Invention No.1 in C Major</p>
+                            <audio controls>
+                              <source src ="audio/JSBach-Invention1.mp3">
+                            </audio>
+                          </div>
+                          <br>
+                          <h4 style="margin-left:10px;margin-bottom: 10px;">Baroque Instruments</h4> <br>
+                          <img src="https://npr.brightspotcdn.com/dims4/default/e87d716/2147483647/strip/true/crop/736x414+0+113/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc1%2F31%2Fbb50776a45f7bc1c24d8446bafa7%2Fmedieval-instruments.jpg"/ width="70%" height="auto">
+                        </div>  
+                        <div class="col-md-2 noPadding">
+                           <h4 style="margin-left:10px">Music Videos</h4>
+                           <div id="video">
+                            <a href="https://youtu.be/eVkNc3LSgOo" target="_blank">
+                            Bach - Invention No. 1 in C major BWV 772, by harpsichord</a> <br><br>
+                            <a href="https://youtu.be/ZdCuA7SbzaM" target="_blank">
+                            Bach - Fugue in G minor BWV 578, by organ</a> <br><br>
+                            <a href="https://youtu.be/ZPdk5GaIDjo" target="_blank">
+                            Vivaldi - Four Seasons: Winter (L'Inverno)</a>
+                          </div>
+                        </div>  
+                    </div>  <!--row-->
+                  </div> <!--accordion-body-->
+                </div> <!--collapseThree-->
+              </div> <!--accordion item-->
+
+              <!--accordion item 4-->
+              <div class="accordion-item" style="background-color: lightgrey;">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:brown;background-color:#F1E9DF">
+                     <div class="row">
+                         <div class="col-md-8">
+                          <h4 style="margin-left:15px">Classical Period &nbsp; &nbsp; &nbsp; (1730-1830 A.D.) </h4>
+                         </div>
+                        <div class="col-md-4">
+                         <img src = "https://images.immediate.co.uk/production/volatile/sites/24/2021/03/What-are-the-different-periods-of-classical-music-5a568b8.jpg"width="80%" height="auto"/>
+                       </div>
+                     </div>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="row">
+                        <div class="col-md-3 noPadding">
+                             <h4 style="margin-left:10px">Composers & Musicians</h4>
+                             <li><a href="mozart.html" target="_blank"> Wolfgang Amadeus Mozart </a><br> <img src="https://cdn.britannica.com/35/74835-050-F0B71060/canvas-oil-Wolfgang-Amadeus-Mozart-Barbara-Krafft-1819.jpg"/ width="80%" height="auto"></li>
+                            <li>  Joseph Haydn<br> <img src="https://www.hafabramusic.com/dossiers/composers/HAYDN.jpg"/width="80%" height="auto"></li>
+                            <li> <a href="beethoven.html" target="_blank">Ludwig van Beethoven</a><br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/640px-Beethoven.jpg" /width="80%" height="auto"></li>
+                        </div>  
+                        <div class="col-md-7 noPadding">
+                          <p style = "margin:10px">
+                            Music from the Classical period <mark>shifted away from the Baroque period's emphasis on polyphonic texture and more towards a single melody with accompaniment.</mark> This created music with less texture but with a more clearly defined melody. <br><br>
+                            <strong>Characteristics of Classical music include:<br></strong>
+                            <li>Single melody with accompaniment: one voice carries the primary melody while another voice plays a simpler line that supports the melody </li>
+                            <li>Larger variety of keys, melodies, rhythms, and dynamics</li>
+                            <li>More contrast in a piece</li>
+                            <li>Shorter, clearer melodies than in Baroque music</li>
+                            <li>More emphasis on instrumental music</li>
+                            <li><mark>Primary forms of composition: sonata, trio, string quartet, symphony, concerto</mark></li>
+                          </p> 
+                          <h4 style="margin-left:10px">Featured Music</h4>
+                          <div id="flexContainer">
+                            <p style="margin-left:5px;">Mozart's Piano Sonata No.11</p>
+                            <audio controls>
+                              <source src ="audio/Piano-sonata-no-11.mp3">
+                            </audio>
+                          </div>
+                          <br>
+                          <h4 style="margin-left:10px;margin-bottom: 10px;">Classical Instruments</h4> <br>
+                          <img src="https://img.benvaughn.com/1666001092634.jpg"/ width="70%" height="28%">
+                        </div>   <!--col-md-7 -->
+                        <div class="col-md-2 noPadding">
+                           <h4 style="margin-left:10px;margin-top: 20px;">Music Videos</h4>
+                           <div id="video">
+                            <a href="https://youtu.be/yM8CFR01KwQ" target="_blank">
+                            Mozart - Concerto for piano and Orchestra (d-minor) K.466, Uchida </a> <br><br>
+                            <a href="https://youtu.be/IOcEwEqRL74" target="_blank">
+                            Joseph Haydn - Trumpet Concerto in E-flat major, 3rd movement
+                            </a><br><br>
+                            <a href="https://youtu.be/ITidiBe-0T0" target="_blank">
+                            Beethoven - Sonata No.14 "Moonlight" Op. 27 No. 2  </a>
+                          </div>
+                        </div> <!--col-md-2-->
+                    </div>  <!--row-->
+                  </div> <!--accordion-body-->
+                </div> <!--collapseThree-->
+              </div> <!--accordion item-->
+
+
+              <!--accordion item 5-->
+              <div class="accordion-item" style="background-color: lightgrey;">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color:brown;background-color:#F1E9DF">
+                     <div class="row">
+                         <div class="col-md-8">
+                          <h4 style="margin-left:15px"> Romantic Period & Impressionism&nbsp; &nbsp; &nbsp; &nbsp; (1830 - 1920 A.D.)</h4>
+                         </div>
+                        <div class="col-md-4">
+                         <img src = "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/13725303/image/4fb08850e0e45b3c5a8b384c46c39736"width="80%" height="auto"/>
+                       </div>
+                     </div>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="row">
+                        <div class="col-md-3 noPadding">
+                             <h4 style="margin-left:10px">Composers & Musicians</h4>
+                             <li> Frederic Chopin <br> <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Chopin%2C_by_Wodzinska.JPG"/ width="130" height="160"></li>
+                            <li>  Franz Schubert <br> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Re-touched_possible_portrait_of_the_young_Schubert%2C_by_Josef_Abeljpg.jpg"/width="130" height="160"></li>
+                            <li> Franz Liszt<br> <img src="https://static01.nyt.com/images/2011/08/22/arts/liszt/liszt-jumbo-v2.jpg?quality=75&auto=webp&disable=upscale" /width="128" height="160"></li>
+                            <li><a href="sergei.html" target="_blank">  Sergei Rachmaninoff </a><br> <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcQRGcH3JFoJYW_wAvNKZyoZgWx5hNiaMTHeY7BhxXNM4eyCekiUgpktzTT2DW30_zxNbRRK3bf-q57h6zs&psig=AOvVaw1JRu2d5Im6crsRkQnDS9ua&ust=1676368751644000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLDS-7Cekv0CFQAAAAAdAAAAABAE"/width="125" height="160"></li>
+                            <li>  Claude Debussy <br> (Impressionism) <br> <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Claude_Debussy_atelier_Nadar.jpg"/width="130" height="160"></li>
+                            <li> Pyotr Ilyich Tchaikovsky <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Tchaikovsky2.jpg/800px-Tchaikovsky2.jpg"/width="128" height="160"></li>
+                        </div>  
+                        <div class="col-md-7 noPadding">
+                          <p style = "margin:10px">
+                            Music from the Romantic period is characterized by its <mark>much greater passion and expression </mark>than that of earlier periods. Romantic works display an expansion of form (like the key and instrumentation of a piece). <br>
+                            Characteristics of Romantic music include:
+                            <li><mark>Freer form and more personal expression of emotion</mark></li>
+                            <li>Emphasis on <mark>lyrical melodies and themes</mark></li>
+                            <li>More modulation (change in key) to <mark>unexpected keys</mark>: the overall effect of this is that it is harder for the listener to predict what will happen next in the piece</li>
+                            <li>More chromaticism and scales other than major/minor</li>
+                            <li><mark>Greater variety </mark> in pitch, dynamics, and rhythm</li>
+                            <li>Less traditional chord progressions</li>
+                            <li><mark>Program music(piece's title came up by composer, not by keys and scales)</mark>: more pieces inspired by literary/artistic sources. For example: Claude Debussy's The Sunken Cathedral (derived from French legend).</li>
+                            <li>Greater emphasis on <mark>nationalism:</mark> many composers infused cultural songs or dances into their works. For example, Chopin's Heroic Polonaise (Op. 53 in A Flat Major), which describes the marching of Polish army.</li>
+
+                            <h4>Featured Music</h4>
+                            <div id="flexContainer">
+                              <p style="margin-left:5px;"> Chopin's Nocturne Op.9 No.2 </p>
+                              <audio controls>
+                                <source src ="audio/Chopin-nocturne-op-9-no-2.mp3">
+                              </audio>
+                           </div><br>
+                           <div id="flexContainer">
+                             <p style="margin-left:5px;">Rachmaninoff's Piano Concerto No.2 </p> 
+                             <audio controls>
+                            <source src ="audio/01Rachmaninov_PianoConcerto2InCMinorOp.18-1.Moderato.mp3">
+                           </audio>
+                         </div><br>
+                         <div id="flexContainer">
+                           <p style="margin-left:5px;">Debussy's Claire de Lune </p>
+                          <audio controls>
+                            <source src ="audio/claire.mp3">
+                          </audio>
+                        </div>
+                           <br> 
+                            <h4>Romantic Instruments</h4>
+                            <img src="https://i0.wp.com/images.slideplayer.com/13/4126033/slides/slide_4.jpg?resize=960%2C720"/ width="70%" height="auto">
+                          </p>
+                        </div>   <!--col-md-7 -->
+                        <div class="col-md-2 noPadding">
+                           <h4 style="margin-left:10px">Music Videos</h4>
+                           <div id="video">
+                            <a href="https://youtu.be/QR10Od1cLaM" target="_blank">
+                               Chopin - Nocturnes, Op. 9: No. 2 in E Flat Major. Andante, by Seong-Jin Cho 
+                            </a> <br><br>
+                            <a href="https://youtu.be/BSFNl4roGlI" target="_blank">
+                              Chopin - Ballade No.1 in G minor, Op.23 (Krystian Zimerman)
+                            </a> <br><br>
+                            <a href="https://youtu.be/fW0Y3M4EJ4M" target="_blank">
+                              Chopin - "Heroic" Polonaise op 53 A flat major, by Valentina Lisitsa
+                            </a> <br><br>
+                             <a href="https://youtu.be/l0Rry-ahcHM" target="_blank">
+                              Schubert - Die Winterreise
+                            </a> <br><br>
+                            <a href="https://youtu.be/97_VJve7UVc" target="_blank">
+                              Debussy - Claire de Lune
+                            </a> <br><br>
+                             <a href="https://youtu.be/SJILQWePbt4" target="_blank">
+                              Debussy - The Sunken Cathedral
+                            </a> <br><br>
+                             <a href="https://youtu.be/cIxGUAnj46U" target="_blank">
+                              Franz Liszt - La Campanella, by Lang Lang
+                            </a> <br><br>
+                            <a href="https://youtu.be/ItSJ_woWnmk" target="_blank">
+                              Tchaikovsky - Piano Concerto No 1, by Martha Argerich
+                            </a> <br><br>
+                            <a href="https://youtu.be/S29wlq6J0iY" target="_blank">
+                              Rachmaninoff - Piano Concerto No.2 in C minor, by Lang Lang
+                            </a> <br><br>
+                            <a href="https://youtu.be/5bX_yRzCuM4" target="_blank">
+                              Rachmaninoff - Piano Concerto No. 3 in D minor, by Yuja Wang
+                            </a> <br><br>
+                          </div>
+                        </div> <!--col-md-2-->
+                    </div>  <!--row-->
+                  </div> <!--accordion-body-->
+                </div> <!--collapseThree-->
+              </div> <!--accordion item-->
+
+            <!--accordion item 6-->
+              <div class="accordion-item" style="background-color: lightgrey;">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSIx" style="color:brown;background-color:#F1E9DF">
+                     <div class="row">
+                         <div class="col-md-8">
+                          <h4 style="margin-left:15px">Contemporary Era: Neoclassicm,  Minimalism, Experimentalism&nbsp; <br>(1920 - present)</h4>
+                         </div>
+                        <div class="col-md-4">
+                         <img src = "https://www.weinerelementary.org/uploads/2/2/8/6/22867982/published/smd-142184-philip-glass-metamorphosis-four-web.png?1519518330"width="80%" height="80%"/>
+                       </div>
+                     </div>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     <div class="row">
+                        <div class="col-md-3 noPadding">
+                             <h4 style="margin-left:10px">Composers & Musicians</h4>
+                            <li> Sergei Prokofiev (Neoclassicism)<br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg/1024px-Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg"/ width="120" height="150"></li>
+                            <li> Igor Stravinsky (Neoclassicism)<br> <img src="https://cdn.britannica.com/64/61864-004-3B40AFE2/Igor-Stravinsky-1920.jpg"/ width="120" height="150">
+                            </li>
+                            <li> Philip Glass (Minimalism) <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Philip_Glass_in_Florence%2C_Italy_-_1993.jpg/800px-Philip_Glass_in_Florence%2C_Italy_-_1993.jpg"/ width="120" height="150"></li>
+                            <li> John Cage (Experimentalism) <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/John_Cage_%281988%29.jpg/440px-John_Cage_%281988%29.jpg"/ width="120" height="150"></li>
+                        </div>  
+                        <div class="col-md-7 noPadding">
+                           <p style = "margin:10px">
+                            The most conspicuous differentiation between classical music in the Contemporary period and in previous periods is the <mark>shift in tone</mark>. Whereas music from the Common Practice Period was largely tonal, much Contemporary music is <mark>atonal </mark>. 
+                            Contemporary classical music can be divided into:<br>
+                            <br>
+                            <section style="margin:center">
+                            20th-century Contemporary Classical Music: 
+                          </section>
+                            <li><mark>Varies greatly, no dominant style</mark></li>
+                            <li>Increased use of <mark>dissonance</mark></li><br>
+                            21st-century Contemporary Classical Music:
+                            <li>Huge variety in style, which include <mark>minimalism, experimentalism </mark></li>
+                            <li>Contains a variety of influences, from world music to technology</li>
+                            <li>Many classical composers have written for <mark>film scores</mark>. For example, Philip Glass wrote "Truman Sleeps" in the film "Truman's Show", which later became a masterpiece of his work in minimalism. </li></p>
+
+                            <h4>Featured Music</h4>
+                            <h5> Prokofiev's Piano Concerto No.3, 2nd movement </h5>
+                              <audio controls>
+                                <source src ="audio/02_Theme and Variations Andantino.mp3">
+                              </audio>
+                        </div>   <!--col-md-7 -->
+                        <div class="col-md-2 noPadding">
+                           <h4 style="margin-left:10px">Music Videos</h4>
+                           <div id="video">
+                            <a href="https://youtu.be/l7X0Yae2hLk" target="_blank">
+                            Philip Glass - The Truman Show (1998) 'Truman Sleeps' 
+                            </a> <br><br>
+                            <a href="https://youtu.be/6Stu7h7Qup8" target="_blank">
+                              Philip Glass - Glassworks
+                            </a> <br><br>
+                            <a href="https://youtu.be/BS0SwRoYAW0" target="_blank">
+                              Prokofiev - Piano Concerto No.3, by Martha Argerich
+                            </a> <br><br>
+                            <a href="https://youtu.be/EkwqPJZe8ms" target="_blank">
+                            Stravinsky - The Rite of Spring
+                            </a> <br><br>
+                            <a href="https://youtu.be/JTEFKFiXSx4" target="_blank">
+                              John Cage - 4'33"
+                            </a>
+                          </div>
+                        </div> <!--col-md-2-->
+                    </div>  <!--row-->
+                  </div> <!--accordion-body-->
+                </div> <!--collapseThree-->
+              </div> <!--accordion item-->
+            </div> <!--accordion -->
+            </div><!-- col-md-12 -->
+      </div> <!-- container-fluid -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
     
+    <!-- swiper JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
 
-    <table border="1" width="90%" height = "1000px">
-      <tr>
-        <td width="280"> Musical Periods</td>
-        <td width="145" class = "composer"> Representative Composers</td>
-        <td width="450"> Descriptions </td>
-        <td width="150"> Video Performance </td>
-      </tr>
-      <tr>
-        <td> <h4>Medieval Period (5th to 15th centuries) </h4><br>
-          <img src = "https://images.squarespace-cdn.com/content/v1/5e9690a24018b11fd15da968/cbc68f16-cc7c-4f9f-bc92-92f47f6efb15/Missa+Papae+colour.jpg"/ width="300" height="180">
-        </td>
-        <td> 
-          <li>Hildegard von Bingen <br> <img src="http://stmaryrockledge.org/wp-content/uploads/2020/07/splendor-7.12-e1594609472371.png"/ width="120" height="150"></li>
-          <li>Pope Gregory I <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gregory_the_Great_with_the_Holy_Spirit.jpg/1280px-Gregory_the_Great_with_the_Holy_Spirit.jpg"/width="120" height="150"></li>
-          <li>Perotin <br> <img src="https://benopus111.files.wordpress.com/2012/07/perotin-magnus-the-great.jpg" /width="120" height="150"></li>
+          var swiper = new Swiper(".slide-content",{
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 3,
+              loop: true,
+              centerSlide: 'true',
+              fade: 'true',
+              grabCursor: 'true',
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+             
+              
+              breakpoints:{
+                  0: {
+                      slidesPerView: 1,
+                  },
+                  520: {
+                      slidesPerView: 2,
+                  },
+                  950: {
+                      slidesPerView: 3,
+                  },
+              },
+
+               scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+            });
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- need to be put after jquery since it will use it -->
+  <script src="js/velocity.min.js"></script>
+  <script src="js/velocity.ui.min.js"></script>
   
-        </td>
-        <td> <p style = "margin:10px">Medieval music encompasses the sacred and secular music of Western Europe during the Middle Ages. The pioneer of Medieval Music is <mark>Hildegard von Bingen </mark>, a German Benedictine abbess and polymath active as a writer, composer, philosopher, mystic, visionary. Medieval music includes <mark>liturgical music used for the church</mark>, and secular music, non-religious music; solely vocal music, such as <mark>Gregorian chant and choral music (music for a group of singers)</mark>, solely instrumental music, and music that uses both voices and instruments (typically with the instruments accompanying the voices). </p>
-
-          <h4>Featured Music</h4>
-        <h5> Gregorian Chant - Ad cenam Agni</h5>
-          <audio controls>
-            <source src ="audio/Ad cenam Agni.mp4">
-          </audio>
-          <br>
-       
-          <h4>Medieval Instruments</h4> <br>
-          <img src=" https://azearlymusic.org/wp-content/uploads/2021/06/Medieval_instruments.png"/ width="480" height="300">
-
-        </td>
-        <td>  <a href="https://youtu.be/0YTOiJ-zjP0">
-          Hildegard von Bingen - Hymns in 12th century
-          </a> <br><br>
-          <a href="https://youtu.be/kK5AohCMX0U">
-            Pope Gregory the Great - Gregorian chant
-          </a>
-          <br><br>
-          <a href="https://youtu.be/2HXT4hLeatM">
-          Mirie it is while sumer ilast (England 13th century)
-          </a>
-          
-          
-        </td>
-      </tr>  
-      <tr>
-        <td> <h4>Renaissance Period (15th to 17th century) </h4><br>
-          <img src="https://blog.artsper.com/wp-content/uploads/2022/04/New-Featured-Image-1200-x-675-6.jpg" / width="300" height="180"></td>
-        <td> <li> Josquin des Prez <br> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZgLEYbl5DzXDBW-KkLG6S4Vkg3kqWZiXJCOeQWcxIOFle495"/ width="120" height="150"></li>
-          <li>  Giovanni Gabrieli<br> <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcSoMAkrPntjnQLqd2PSbmXMWLC1g1WHBuMZ7FTDFohovFpG7mnkFOMF7tpKE0GbD_x7&psig=AOvVaw2udAGgshMQviqYMVEWNN1L&ust=1676360605127000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCICLtoSAkv0CFQAAAAAdAAAAABAI"/width="120" height="150"></li>
-          <li> William Byrd <br> <img src="https://d3d00swyhr67nd.cloudfront.net/w944h944/collection/ESX/ECCC/ESX_ECCC_216-001.jpg" /width="120" height="150"></li>
-  </td>
-        <td> <p style = "margin:10px">Much of the rhythmic complexities of late medieval music lost favour amongst the new emerging Renaissance composers. Polyphony and counterpoint featured in both sacred and secular Renaissance music but the lines were sleeker and cadence points an increasingly important focus. This was gradually moving the <mark>harmonic attention towards the tonal system of keys we know today.</mark> For a great proportion of the Renaissance, modal music was commonplace and gives the era a unique sound quality now perhaps more associated with contemporary folk music. The music often contains intervals like the open fifth (ie: C - G), or fourths (C - F) but as the period progresses the third and sixth notes of the scale become accepted as musically appropriate to use. <mark>An even more clear line </mark>is drawn in the Renaissance <mark>between music for the Church (sacred) and music used at Court for example (secular). </mark> </p>  
-
-          <h4>Featured Music</h4>
-        <h5> William Byrd - Pavane by Lute </h5>
-          <audio controls>
-            <source src ="audio/pavbyrd.mp3">
-          </audio>
-          <br>
-        <h4>Renaissance Instruments</h4> 
-          <img src="https://npr.brightspotcdn.com/dims4/default/e87d716/2147483647/strip/true/crop/736x414+0+113/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc1%2F31%2Fbb50776a45f7bc1c24d8446bafa7%2Fmedieval-instruments.jpg"/ width="480" height="300">  
-
- </td>
-        
-        <td>  <a href="https://youtu.be/MNm9tNZePew">
-          Josquin des Prez - Qui habitat
-          </a> <br><br>
-          <a href="https://youtu.be/4Ijm8mrwHGo">
-            Giovanni Gabrieli - Renaissance music for two harpsichords
-          </a>
-          <br><br>
-          <a href="https://youtu.be/ePqqoag8s1E">
-           William Byrd - Mass for five voices
-          </a></td>
-      </tr> 
-        <td> <h4>Baroque Period (1600-1760 A.D.) </h4><br>
-          <img src = "https://www.liveabout.com/thmb/MBOstU9tb8lHeQtAblTnWGk22qY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vocal-and-instrumental-concert-in-the-baroque-period-1771-gouache-germany-18th-century-162279496-58448b5f5f9b5851e576b959.jpg"/ width="300" height="180"></td>
-                <td> <li> Johann Sebastian Bach <br> <img src="https://d3fr1q02b1tb0i.cloudfront.net/wp-content/uploads/2017/11/06075602/Bach-bye-bye.jpg"/ width="120" height="150"></li>
-          <li>  Antonio Vivaldi <br> <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Vivaldi.jpg"/width="120" height="150"></li>
-          <li> George Frederic Handel <br> <img src="https://cdn.britannica.com/06/167806-050-C6A92A03/George-Frideric-Handel-oil-canvas-Thomas-Hudson-1736.jpg" /width="120" height="150"></li></td>
-                <td> <p style = "margin:10px">The Baroque saw the creation of <mark>common-practice tonality </mark>, an approach to writing music in which a song or piece is written in a particular key; this type of harmony has continued to be used extensively in Western classical and popular music. Baroque music is primarily characterized by its <mark>polyphonic texture </mark>, meaning that the music contains 2 or more independent melodic voices. In particular, Baroque music is known for its use of the <mark>counterpoint.</mark> The counterpoint is a pretty complex musical idea, but in simpler terms, counterpoint uses different, independent musical lines that sound harmonious when played together. <br>
-                Characteristics of Baroque music include:
-<li>Polyphonic texture: multiple melodic lines in different voices</li>
-<li>Unity of mood: each piece features a single emotion (i.e. a piece that begins happy will remain happy)</li>
-<li>Continuity of rhythm: rhythmic patterns are often repeated throughout a piece</li>
-<li><mark>Repetition of melody:</mark> the melody is repeated; though it is distinct, it is not lyrical</li>
-<li>Terraced dynamics: dynamics change suddenly rather than gradually
-Ornamentation (music flourishes, often fast notes, to decorate the main note)</li>
-<li>Less use of instrumental music; large use of the <mark>harpsichord</mark> </li>              </p>
-
-<h4>Featured Music</h4>
-        <h5> Bach's Invention No.1 in C Major </h5>
-          <audio controls>
-            <source src ="audio/JSBach-Invention1.mp3">
-          </audio>
-
-
-<h4>Baroque Instruments</h4> <br>
-                <img src="https://www.musictheoryacademy.com/wp-content/uploads/2018/07/Baroque-music-instruments.jpg"/ width="480" height="400">
-
-                 </td>
-               
-                <td> 
-                  <a href="https://youtu.be/eVkNc3LSgOo">
-                Bach - Invention No. 1 in C major BWV 772, by harpsichord</a> <br><br>
-                <a href="https://youtu.be/ZdCuA7SbzaM">
-                Bach - Fugue in G minor BWV 578, by organ</a> <br><br>
-                  <a href="https://youtu.be/ZPdk5GaIDjo">
-                Vivaldi - Four Seasons: Winter (L'Inverno)</a></td>
-
-      <tr>
-        <td><h4> Classical Period (1730-1830 A.D.) </h4><br>
-          <img src = "https://images.immediate.co.uk/production/volatile/sites/24/2021/03/What-are-the-different-periods-of-classical-music-5a568b8.jpg"/ width="300" height="180"></td>
-        <td><li> Wolfgang Amadeus Mozart <br> <img src="https://cdn.britannica.com/35/74835-050-F0B71060/canvas-oil-Wolfgang-Amadeus-Mozart-Barbara-Krafft-1819.jpg"/ width="120" height="150"></li>
-          <li>  Joseph Haydn<br> <img src="https://www.hafabramusic.com/dossiers/composers/HAYDN.jpg"/width="120" height="150"></li>
-          <li> Ludwig van Beethoven<br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/640px-Beethoven.jpg" /width="120" height="150"></li></td>
-        <td> <p style = "margin:10px">Music from the Classical period <mark>shifted away from the Baroque period's emphasis on polyphonic texture and more towards a single melody with accompaniment.</mark> This created music with less texture but with a more clearly defined melody. <br>
-        Characteristics of Classical music include:<br>
-        <li>Single melody with accompaniment: one voice carries the primary melody while another voice plays a simpler line that supports the melody </li>
-        <li>Larger variety of keys, melodies, rhythms, and dynamics</li>
-        <li>More contrast in a piece</li>
-        <li>Shorter, clearer melodies than in Baroque music</li>
-        <li>More emphasis on instrumental music</li>
-        <li><mark>Primary forms of composition: sonata, trio, string quartet, symphony, concerto</mark></li></p> 
-
-        <h4>Featured Music</h4>
-        <h5> Mozart's Piano Sonata No.11 </h5>
-          <audio controls>
-            <source src ="audio/Piano-sonata-no-11.mp3">
-          </audio>
-          <br>
-          <br>
-
-
-        <h4>Classical Instruments</h4> 
-        <img src="https://img.benvaughn.com/1666001092634.jpg"/width="480" height="350">
-      </td>
-        
-        <td> 
-          <a href="https://youtu.be/yM8CFR01KwQ">
-        Mozart - Concerto for piano and Orchestra (d-minor) K.466, Uchida </a> <br><br>
-        <a href="https://youtu.be/IOcEwEqRL74">
-        Joseph Haydn - Trumpet Concerto in E-flat major, 3rd movement
-        </a><br><br>
-        <a href="https://youtu.be/ITidiBe-0T0">
-        Beethoven - Sonata No.14 "Moonlight" Op. 27 No. 2  </a>
-      </td>
-      </tr> 
-      <tr>
-         <td> <h4>Romantic Period (1830 - 1920 A.D.)</h4>
-         <img src = "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/13725303/image/4fb08850e0e45b3c5a8b384c46c39736"/ width="300" height="180"></td>
-        <td> 
-          <li> Frederic Chopin <br> <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Chopin%2C_by_Wodzinska.JPG"/ width="130" height="160"></li>
-          <li>  Franz Schubert <br> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Re-touched_possible_portrait_of_the_young_Schubert%2C_by_Josef_Abeljpg.jpg"/width="130" height="160"></li>
-          <li> Franz Liszt<br> <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QDZRXhpZgAASUkqAAgAAAACAA4BAgCPAAAAJgAAAJiCAgAcAAAAtQAAAAAAAABQb3J0cmFpdCBvZiBGcmFueiBMaXN6dCAoMTgxMS0xODg2KSwgY29tcG9zZXIgYW5kIHBpYW5pc3QsIDE4MzkuIEFydGlzdCBIZW5yaSBMZWhtYW5uLiAoUGhvdG8gYnkgSGVyaXRhZ2UgQXJ0L0hlcml0YWdlIEltYWdlcyB2aWEgR2V0dHkgSW1hZ2VzKUhlcml0YWdlIEFydC9IZXJpdGFnZSBJbWFnZXP/7QEKUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAO4cAlAAD0hlcml0YWdlIEltYWdlcxwCeACPUG9ydHJhaXQgb2YgRnJhbnogTGlzenQgKDE4MTEtMTg4NiksIGNvbXBvc2VyIGFuZCBwaWFuaXN0LCAxODM5LiBBcnRpc3QgSGVucmkgTGVobWFubi4gKFBob3RvIGJ5IEhlcml0YWdlIEFydC9IZXJpdGFnZSBJbWFnZXMgdmlhIEdldHR5IEltYWdlcykcAnQAHEhlcml0YWdlIEFydC9IZXJpdGFnZSBJbWFnZXMcAm4AIEhlcml0YWdlIEltYWdlcyB2aWEgR2V0dHkgSW1hZ2Vz/+EFymh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+Cgk8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgoJCTxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6SXB0YzR4bXBDb3JlPSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wQ29yZS8xLjAveG1sbnMvIiAgIHhtbG5zOkdldHR5SW1hZ2VzR0lGVD0iaHR0cDovL3htcC5nZXR0eWltYWdlcy5jb20vZ2lmdC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBsdXM9Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iICB4bWxuczppcHRjRXh0PSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wRXh0LzIwMDgtMDItMjkvIiB4bWxuczp4bXBSaWdodHM9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9yaWdodHMvIiBkYzpSaWdodHM9Ikhlcml0YWdlIEFydC9IZXJpdGFnZSBJbWFnZXMiIHBob3Rvc2hvcDpDcmVkaXQ9Ikhlcml0YWdlIEltYWdlcyB2aWEgR2V0dHkgSW1hZ2VzIiBHZXR0eUltYWdlc0dJRlQ6QXNzZXRJRD0iMTQyNjA2MjQ5NCIgeG1wUmlnaHRzOldlYlN0YXRlbWVudD0iaHR0cHM6Ly93d3cuZ2V0dHlpbWFnZXMuY29tL2V1bGE/dXRtX21lZGl1bT1vcmdhbmljJmFtcDt1dG1fc291cmNlPWdvb2dsZSZhbXA7dXRtX2NhbXBhaWduPWlwdGN1cmwiID4KPGRjOmNyZWF0b3I+PHJkZjpTZXE+PHJkZjpsaT5IZXJpdGFnZSBJbWFnZXM8L3JkZjpsaT48L3JkZjpTZXE+PC9kYzpjcmVhdG9yPjxkYzpkZXNjcmlwdGlvbj48cmRmOkFsdD48cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPlBvcnRyYWl0IG9mIEZyYW56IExpc3p0ICgxODExLTE4ODYpLCBjb21wb3NlciBhbmQgcGlhbmlzdCwgMTgzOS4gQXJ0aXN0IEhlbnJpIExlaG1hbm4uIChQaG90byBieSBIZXJpdGFnZSBBcnQvSGVyaXRhZ2UgSW1hZ2VzIHZpYSBHZXR0eSBJbWFnZXMpPC9yZGY6bGk+PC9yZGY6QWx0PjwvZGM6ZGVzY3JpcHRpb24+CjxwbHVzOkxpY2Vuc29yPjxyZGY6U2VxPjxyZGY6bGkgcmRmOnBhcnNlVHlwZT0nUmVzb3VyY2UnPjxwbHVzOkxpY2Vuc29yVVJMPmh0dHBzOi8vd3d3LmdldHR5aW1hZ2VzLmNvbS9kZXRhaWwvMTQyNjA2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" /width="128" height="160"></li>
-          <li>  Sergei Rachmaninoff <br> <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcQRGcH3JFoJYW_wAvNKZyoZgWx5hNiaMTHeY7BhxXNM4eyCekiUgpktzTT2DW30_zxNbRRK3bf-q57h6zs&psig=AOvVaw1JRu2d5Im6crsRkQnDS9ua&ust=1676368751644000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLDS-7Cekv0CFQAAAAAdAAAAABAE"/width="125" height="160"></li>
-          <li>  Claude Debussy <br> (Impressionism) <br> <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Claude_Debussy_atelier_Nadar.jpg"/width="130" height="160"></li>
-          <li> Pyotr Ilyich Tchaikovsky <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Tchaikovsky2.jpg/800px-Tchaikovsky2.jpg"/width="128" height="160"></li>
-
-        </td>
-        <td> 
-          <p style = "margin:10px">
-            Music from the Romantic period is characterized by its <mark>much greater passion and expression </mark>than that of earlier periods. Romantic works display an expansion of form (like the key and instrumentation of a piece). <br>
-            Characteristics of Romantic music include:
-            <li><mark>Freer form and more personal expression of emotion</mark></li>
-            <li>Emphasis on <mark>lyrical melodies and themes</mark></li>
-            <li>More modulation (change in key) to <mark>unexpected keys</mark>: the overall effect of this is that it is harder for the listener to predict what will happen next in the piece</li>
-            <li>More chromaticism and scales other than major/minor</li>
-            <li><mark>Greater variety </mark> in pitch, dynamics, and rhythm</li>
-            <li>Less traditional chord progressions</li>
-            <li><mark>Program music(piece's title came up by composer, not by keys and scales)</mark>: more pieces inspired by literary/artistic sources. For example: Claude Debussy's The Sunken Cathedral (derived from French legend).</li>
-            <li>Greater emphasis on <mark>nationalism:</mark> many composers infused cultural songs or dances into their works. For example, Chopin's Heroic Polonaise (Op. 53 in A Flat Major), which describes the marching of Polish army.</li>
-
-            <h4 style="font-weight: bold;">Featured Music</h4>
-            <h5> Chopin's Nocturne Op.9 No.2 </h5>
-             <audio controls>
-            <source src ="audio/Chopin-nocturne-op-9-no-2.mp3">
-            </audio>
-            <h5> Rachmaninoff's Piano Concerto No.2, 1st movement </h5>
-             <audio controls>
-            <source src ="audio/01Rachmaninov_PianoConcerto2InCMinorOp.18-1.Moderato.mp3">
-           </audio>
-           <h5> Debussy's Claire de Lune </h5>
-          <audio controls>
-            <source src ="audio/claire.mp3">
-          </audio>
-
-
-           <br>
-           <br>
-            <h4>Romantic Instruments</h4>
-            <img src="https://i0.wp.com/images.slideplayer.com/13/4126033/slides/slide_4.jpg?resize=960%2C720"/ width="480" height="350">
-          </p>
-         </td>
-        
-        <td> 
-          <a href="https://youtu.be/QR10Od1cLaM">
-             Chopin - Nocturnes, Op. 9: No. 2 in E Flat Major. Andante, by Seong-Jin Cho 
-          </a> <br><br>
-          <a href="https://youtu.be/BSFNl4roGlI">
-            Chopin - Ballade No.1 in G minor, Op.23 (Krystian Zimerman)
-          </a> <br><br>
-          <a href="https://youtu.be/fW0Y3M4EJ4M">
-            Chopin - "Heroic" Polonaise op 53 A flat major, by Valentina Lisitsa
-          </a> <br><br>
-           <a href="https://youtu.be/l0Rry-ahcHM">
-            Schubert - Die Winterreise
-          </a> <br><br>
-          <a href="https://youtu.be/97_VJve7UVc">
-            Debussy - Claire de Lune
-          </a> <br><br>
-           <a href="https://youtu.be/SJILQWePbt4">
-            Debussy - The Sunken Cathedral
-          </a> <br><br>
-           <a href="https://youtu.be/cIxGUAnj46U">
-            Franz Liszt - La Campanella, by Lang Lang
-          </a> <br><br>
-          <a href="https://youtu.be/ItSJ_woWnmk">
-            Tchaikovsky - Piano Concerto No 1, by Martha Argerich
-          </a> <br><br>
-          <a href="https://youtu.be/S29wlq6J0iY">
-            Rachmaninoff - Piano Concerto No.2 in C minor, by Lang Lang
-          </a> <br><br>
-          <a href="https://youtu.be/5bX_yRzCuM4">
-            Rachmaninoff - Piano Concerto No. 3 in D minor, by Yuja Wang
-          </a> <br><br>
-
-         </td>
-      </tr> 
-      <tr>
-        <td> <h4>Contemporary Era(1920 - present) </h4>
-          <img src="https://www.weinerelementary.org/uploads/2/2/8/6/22867982/published/smd-142184-philip-glass-metamorphosis-four-web.png?1519518330"width="300" height="250"></td>
-        <td> 
-          <li> Sergei Prokofiev (Neoclassicism)<br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg/1024px-Sergei_Prokofiev_circa_1918_over_Chair_Bain.jpg"/ width="120" height="150"></li>
-          <li> Igor Stravinsky (Neoclassicism)<br> <img src="https://cdn.britannica.com/64/61864-004-3B40AFE2/Igor-Stravinsky-1920.jpg"/ width="120" height="150">
-          </li>
-          <li> Philip Glass (Minimalism) <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Philip_Glass_in_Florence%2C_Italy_-_1993.jpg/800px-Philip_Glass_in_Florence%2C_Italy_-_1993.jpg"/ width="120" height="150"></li>
-          <li> John Cage (Experimentalism) <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/John_Cage_%281988%29.jpg/440px-John_Cage_%281988%29.jpg"/ width="120" height="150"></li>
-
-        </td>
-        <td> 
-          <p style = "margin:10px">
-            The most conspicuous differentiation between classical music in the Contemporary period and in previous periods is the <mark>shift in tone</mark>. Whereas music from the Common Practice Period was largely tonal, much Contemporary music is <mark>atonal </mark>. 
-        Contemporary classical music can be divided into:<br>
-        <br>
-        <section style="margin:center">
-        20th-century Contemporary Classical Music: 
-      </section>
-        <li><mark>Varies greatly, no dominant style</mark></li>
-        <li>Increased use of <mark>dissonance</mark></li><br>
-        21st-century Contemporary Classical Music:
-        <li>Huge variety in style, which include <mark>minimalism, experimentalism </mark></li>
-        <li>Contains a variety of influences, from world music to technology</li>
-        <li>Many classical composers have written for <mark>film scores</mark>. For example, Philip Glass wrote "Truman Sleeps" in the film "Truman's Show", which later became a masterpiece of his work in minimalism. </li></p>
-
-        <h4>Featured Music</h4>
-        <h5> Prokofiev's Piano Concerto No.3, 2nd movement </h5>
-          <audio controls>
-            <source src ="audio/02_Theme and Variations Andantino.mp3">
-          </audio>
-          <br>
-          <br>
-        </td>
-
-        <td> 
-          <a href="https://youtu.be/l7X0Yae2hLk">
-            Philip Glass - The Truman Show (1998) 'Truman Sleeps' 
-          </a> <br><br>
-          <a href="https://youtu.be/6Stu7h7Qup8">
-            Philip Glass - Glassworks
-          </a> <br><br>
-          <a href="https://youtu.be/BS0SwRoYAW0">
-            Prokofiev - Piano Concerto No.3, by Martha Argerich
-          </a> <br><br>
-          <a href="https://youtu.be/EkwqPJZe8ms">
-          Stravinsky - The Rite of Spring
-          </a> <br><br>
-          <a href="https://youtu.be/JTEFKFiXSx4">
-            John Cage - 4'33"
-          </a> <br><br>
-           </td>
-
-      </tr> 
-      <tr>
-        
-      </tr>
-    </table>
-    
-  
-    </div>
-
-    
-
-    <footer>
-
-      <div>
-        
-      </div>
-    </footer>
-    
-  </body>
+        <!-- Custom JS -->
+        <script src="js/custom.js"></script>
+</body> 
 </html>
